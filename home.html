@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <script src="jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <img id="lightImage" src="images/lightoff_360.jpeg" height="126" width="76"/>
+    <button id="myButton">ON/OFF</button>
+
+<script>
+
+    var isOn = false;
+
+    $('#myButton').click(function () {
+        if(isON==false){
+            ('#lightImage').attr('src','lighton_360.jpeg');
+        }
+        else(isOFF==true){
+            ('#lightImage').attr('src','lightoff_360.jpeg')
+        }
+
+        var isMoved = false;
+        $('#one').click(function(){
+
+            if (isMoved==false) {
+                //move are square to the right
+                $(this).animate({
+                    marginLeft: '+=200px'
+                });
+            }else{
+                //move are square to the left
+                $(this).animate({
+                    
+                })
+            }
+        }
+
+    })
+
+</script>
+
+</body>
+</html>
